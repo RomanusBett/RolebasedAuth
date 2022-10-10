@@ -1,2 +1,2 @@
-# RolebasedAuth
-user authentication based on defined roles
+# EquinoxCanteenAPI
+Canteen App API
