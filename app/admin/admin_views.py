@@ -27,5 +27,4 @@ class CreateMeal(Resource):
 
     def post(self):
         data = CreateMeal.parser.parse_args()
-        print(">>>>>>>>", data)
         # TODO add logic to commit data to a dabatase
