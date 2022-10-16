@@ -22,9 +22,10 @@ class CreateMeal(Resource):
     parser.add_argument("subsidy", type=int, required=True,
                         help="This field can not be left bank")
 
-    parser.add_argument("meal_image", type=str, required=True,
+    parser.add_argument("meal_image", type=str, required=False,
                         help="This field can not be left bank")
 
     def post(self):
         data = CreateMeal.parser.parse_args()
+        print(">>>>>>>>", data)
         # TODO add logic to commit data to a dabatase
