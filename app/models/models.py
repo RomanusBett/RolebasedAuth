@@ -4,6 +4,7 @@ import psycopg2
 # local imports
 from flask import current_app
 
+
 class DataStore:
     """ database connection model """
 
@@ -12,15 +13,12 @@ class DataStore:
         self.db_username = current_app.config['DB_USERNAME']
         self.db_password = current_app.config['DB_PASSWORD']
         self.db_name = current_app.config['DB_NAME']
-
-        # connect to fastfoodfast database
         self.conn = psycopg2.connect(
             host=self.db_host,
             user=self.db_username,
             password=self.db_password,
             database=self.db_name,
         )
-        # open cursor to perfome database operations
         self.cur = self.conn.cursor()
 
     def create_table(self, schema):
@@ -39,7 +37,6 @@ class DataStore:
 
     def close(self):
         self.cur.close()
-
 
 
 class Meals(DataStore):
