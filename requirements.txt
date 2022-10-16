@@ -1,17 +1,13 @@
 # Flask Framework
-Flask==1.0.2
-sqlalchemy-migrate==0.7.2
-psycopg2==2.7.5
-Flask-RESTful==0.3.6
-
+Flask==2.2.2
+psycopg2-binary==2.9.4
+Flask-RESTful==0.3.8
+Jinja2==3.1.2
 # Flask Packages
-Flask-Login==0.4.0
 Flask-Migrate==2.0.2
-Flask-Script==2.0.5
 Flask-SQLAlchemy==2.4.0
-Flask-WTF==0.14.2
-Flask-User==1.0.1.5
+python-dotenv==0.21.0
 
-# Automated tests
-pytest==3.0.5
-pytest-cov==2.4.0
+# developement
+autopep8==1.7.0
+pycodestyle==2.9.1
